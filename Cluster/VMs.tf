@@ -27,11 +27,11 @@ resource "tls_private_key" "SSH" {
     }
 
     computer_name                   = "KUB-Worker-${count.index}"
-    admin_username                  = "momo"
+    admin_username                  = "fabio"
     disable_password_authentication = true
 
     admin_ssh_key {
-      username   = "momo"
+      username   = "fabio"
       public_key = tls_private_key.SSH.public_key_openssh
    }
 
@@ -59,7 +59,7 @@ resource "tls_private_key" "SSH" {
     }
 
     computer_name                   = "KUB-Manager"
-    admin_username                  = "momo"
+    admin_username                  = "fabio"
     disable_password_authentication = true
 
     admin_ssh_key {
