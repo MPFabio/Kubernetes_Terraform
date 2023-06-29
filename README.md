@@ -7,4 +7,4 @@ Après avoir déployer l'infra il suffit de rediriger l'output des clés dans de
 
 - chmod 400 id_rsa
 
-- ssh -i id_rsa user@<IP>
+- ssh -i id_rsa user@IP
