@@ -63,7 +63,7 @@ resource "tls_private_key" "SSH" {
     disable_password_authentication = true
 
     admin_ssh_key {
-     username   = "momo"
+     username   = "fabio"
      public_key = tls_private_key.SSH.public_key_openssh
     }
 
